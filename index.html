@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      body {
+          background-color: hsl(216, 12%, 8%);
+          color: white;
+          font-size: 15px;
+          font-family: 'Overpass', sans-serif;
+      }
+
+      main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+
+      .box-container {
+          width: 350px;
+          height: 325px;
+          background-color: #212832;
+          padding: 30px;
+          border-radius: 20px;
+      }
+      .img-container {
+          margin-bottom: 20px;
+      }
+      .img-container img{
+          padding: 12px;
+          background-color:  hsl(212, 17%, 20%);
+          border-radius: 50%;
+      }
+      h2 {
+          margin-bottom: 20px;
+      }
+      p {
+          color: hsl(217, 12%, 63%);
+          line-height: 1.5;
+          margin-bottom: 20px;
+      }
+      .rating-btn-container {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 30px;
+      }
+      .rating-btn {
+        font-weight: bold;
+        padding: 13px 19px;
+        background:#262f38;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        color: #737b86;
+        font-size: 16px;    
+      }
+      .rating-btn:hover {
+          color: white;
+          background-color: hsl(217, 12%, 63%);
+      }
+      .rating-btn:focus {
+          background-color: hsl(25, 97%, 53%) ;
+      }
+      .submit-btn {
+      width: 100%;
+      font-weight: bold;
+      padding: 14px 20px;
+      border: none;
+      outline: none;
+      background: hsl(25, 97%, 53%);
+      color: #fff;
+      border-radius: 20px;
+      letter-spacing: 2px;
+    }
+    .submit-btn:hover {
+      background-color: #fff;
+      color: hsl(25, 97%, 53%);
+    }
+
+    /* thank state */
+
+    .thank-you-container p{
+        text-align: center;
+    }
+    .thank-you-container h2{
+        text-align: center;
+    }
+    .img-container-thanks {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .subtitle p{
+        width: 160px;
+        background-color: #262f38;
+        color: hsl(25, 97%, 53%);
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+
+
+    
+
+        
+
+
+    @media only screen and (max-width: 500px) {
+
+        .box-container{
+            width: 80%;
+            height: auto;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .rating-btn-container {
+            margin-bottom: 20px;
+        }
+        .rating-btn {
+            padding: 13px 18px;
+        }
+        
+
+
+    }
+
+
+  </style>
+</head>
+<body>
+
+<main>
+    <!-- Main state start -->
+     <div class="box-container sm:card"  id="feedback-box">
+      <div class="img-container">
+        <img src="icon-star.svg" class="star-icon">
+      </div>
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated  to help us improve our offering!</p>
+      <div class="rating-btn-container">
+        <button class="rating-btn" id="1" aria-selected="false" role="button"> 1</button>
+        <button class="rating-btn" id="2" aria-selected="false" role="button">2 </button>
+        <button class="rating-btn" id="3" aria-selected="false" role="button"> 3</button>
+        <button class="rating-btn" id="4" aria-selected="false" role="button">4 </button>
+        <button class="rating-btn" id="5" aria-selected="false" role="button">5 </button>
+      </div><button class="submit-btn" id="submit">SUBMIT</button></div>
+    <!-- Main state end -->
+    <!-- Thank you state Start -->
+    <div hidden class="box-container thank-you-container"  id="thank-you-box">
+        <div class="img-container-thanks">
+            <img src="illustration-thank-you.svg">
+        </div>
+        <!-- ARRIVATO QUI, MANIPOLARE DIV PARAGRAFO -->
+        <div class="subtitle">
+            <p class="rating-result">You selected <span id="selected-rating">0</span> out of 5</p>
+
+        </div>
+         
+         <h2>Thank you!</h2>
+         <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+
+    </div>
+    <!-- Thank you state end -->
+</main>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
