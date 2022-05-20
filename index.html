@@ -114,13 +114,6 @@
         padding: 5px 10px;
         border-radius: 15px;
     }
-
-
-    
-
-        
-
-
     @media only screen and (max-width: 500px) {
 
         .box-container{
@@ -135,12 +128,7 @@
         .rating-btn {
             padding: 13px 18px;
         }
-        
-
-
     }
-
-
   </style>
 </head>
 <body>
@@ -149,16 +137,16 @@
     <!-- Main state start -->
      <div class="box-container sm:card"  id="feedback-box">
       <div class="img-container">
-        <img src="icon-star.svg" class="star-icon">
+        <img src="icon-star.svg" alt="star-icon">
       </div>
       <h2>How did we do?</h2>
       <p>Please let us know how we did with your support request. All feedback is appreciated  to help us improve our offering!</p>
       <div class="rating-btn-container">
-        <button class="rating-btn" id="1" aria-selected="false" role="button"> 1</button>
-        <button class="rating-btn" id="2" aria-selected="false" role="button">2 </button>
-        <button class="rating-btn" id="3" aria-selected="false" role="button"> 3</button>
-        <button class="rating-btn" id="4" aria-selected="false" role="button">4 </button>
-        <button class="rating-btn" id="5" aria-selected="false" role="button">5 </button>
+        <button class="rating-btn" id="1"> 1</button>
+        <button class="rating-btn" id="2" >2</button>
+        <button class="rating-btn" id="3" > 3</button>
+        <button class="rating-btn" id="4" >4 </button>
+        <button class="rating-btn" id="5" >5 </button>
       </div><button class="submit-btn" id="submit">SUBMIT</button></div>
     <!-- Main state end -->
     <!-- Thank you state Start -->
@@ -166,7 +154,6 @@
         <div class="img-container-thanks">
             <img src="illustration-thank-you.svg">
         </div>
-        <!-- ARRIVATO QUI, MANIPOLARE DIV PARAGRAFO -->
         <div class="subtitle">
             <p class="rating-result">You selected <span id="selected-rating">0</span> out of 5</p>
 
