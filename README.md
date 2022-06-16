@@ -1,3 +1,4 @@
+
 # interactive-rating-component!
 
 
@@ -7,13 +8,13 @@ I have made use of Javascript to create a dropdown menu containing the answers t
 
 Live website:
 
-https://frabjous-elf-55863b.netlify.app/
+https://fascinating-semolina-37d8e6.netlify.app/
 
-Mobile view:
-
-<img src="https://user-images.githubusercontent.com/103607112/174086360-52676c2b-6d77-4ee4-aed1-f3fdefc93901.png" width="250px" height="auto" title="mobile-view">
 
 Desktop view:
 
-<img src="https://user-images.githubusercontent.com/103607112/174086587-dd9467f0-6f98-4142-a761-a32bc9dbf472.png" width="1440px" height="auto" title="desktop-view">
+<img src="https://user-images.githubusercontent.com/103607112/174087960-e3349080-2f19-466e-84e7-e78507a9c193.png" width="1440px" height="auto" title="desktop-view">
+
+
+
 
